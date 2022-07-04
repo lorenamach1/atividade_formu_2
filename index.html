@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Aula11</title>
+</head>
+<body>
+
+    <h1>Aliste-se</h1>
+    <form action="https://bemach1.com.br/html-aula-forms/cadastroRecruta.php" method="post" target="_blank">
+
+    <div>
+        <label id="email"> Seu e-mail
+            <br>
+                <input type="email" placeholder="seuemail@gmail.com" id="email" name="email">
+        </label>
+    </div>  
+    <br>
+
+    <div>
+        <label id="pwd">Senha
+            <br>
+                <input type="password" placeholder="Sua senha" id="pwd" name="senha">
+        </label>
+    </div>
+    <br>
+    
+    <div>
+        <label id="nome">Nome completo
+            <br>
+                <input type="text" placeholder="Seu nome" id="nome" name="nameCompleto">
+        </label>
+      </div>
+    <br>
+    
+    <div>
+        <label id="cpf">CPF (Apenas números)
+            <br>
+                <input type="text" placeholder="00000000000" maxlength="11" id="cpf" name=cpf>
+        </label>
+    </div>
+    <br>
+
+    <div>
+        <label id="rg">RG (Apenas números)
+            <br>
+                <input type="text" placeholder="00000000000" maxlength="11" id="rg" name="rg">
+        </label>
+    </div>
+    <br>
+
+    <div>
+        <label id="date"> Data de nascimento
+          <br>
+        <input type="date" id="date" name="data">
+        </label>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>Necessidades especiais</legend>
+            <input name="necessidadesEspeciais" type="radio" value="sim" > 
+                <label for="sim">Sim</label>
+                    <br>
+                    <br>
+            <input name="necessidadesEspeciais" type="radio" value="não" id="nao" >
+                <label for="nao">Não</label>
+                    <br>
+    </fieldset>
+    <br>
+
+    <label for="estado">Estado de residência
+    <br>
+    <select id="estado" name="estado">
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    </select>
+    </label><br><br>
+    
+    
+
+    <fieldset>
+    <legend>Especialização desejada</legend>
+    <label for="backend">
+    <input type="checkbox" name="backend">Mecânica de aeronaves (Back-end)
+    </label>
+    <br>
+    <br>
+    <label for="frontend">
+    <input type="checkbox" name="frontend">Montagem de aeronaves (Front-end)
+    </label>
+    <br>
+    <br>
+    <label for="fullstack">
+    <input type="checkbox" name="fullstack">Engenheiro de aeronaves (Full-stack)
+    </label>
+    <br>
+    <br>
+    <label for="tester">
+    <input type="checkbox" name="tester">Piloto (Tester)
+    </label>
+    <br>
+    <br>
+    <label for="scrumMaster"> 
+    <input type="checkbox" name="scrumMaster">Operador de trafego aéreo (Scrum Master)
+    </label>
+    </fieldset>
+    <br>
+
+    <div>
+        <label for="foto" id="foto">Adicione sua foto:
+            <input type="file" multiple id="foto" name="foto">
+        </label>
+    </div>  
+    
+    <br>
+    <input type="submit">
+      
+
+    
+</body>
+</html>
